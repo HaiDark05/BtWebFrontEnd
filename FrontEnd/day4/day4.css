@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/white-rabbit-figurine-fence_23-2147759724.jpg?uid=R172592271&ga=GA1.1.255335923.1730873654&semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 60%;
+    background: rgba(89, 87, 87, 0.215);
+    border-radius: 10px;
+    color: white;
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 10px;
+        .formgroup {
+            padding: 20px;
+            text-align: center;
+            h1 {
+                display:inherit;
+            }
+            .formright{
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+                position: relative;
+                label {
+                    position: absolute;
+                    color: gray;
+                    top: 50%;
+                    left: 8px;
+                    transform: translateY(-50%);
+                }
+                input {
+                    width: 100%;
+                    padding: 8px;
+                    border-radius: 20px;
+                    &:focus {
+                        background-color: yellow;
+                    }
+                }
+                i {
+                    color: black;
+                   position: absolute;
+                   top: 50%;
+                    right: 20px;
+                    transform: translate(-50%,-50%);
+                  
+                }
+            }
+            .login {
+                button {
+                    background-color: blue;
+                    color: white;
+                    width: 100%;
+                    padding: 8px;
+                    margin-top: 10px;
+                    border-radius: 20px;
+                }
+            }
+            .text {
+                text-align: center;
+                margin-top: 10px;
+            }
+            .button-box {
+                margin-top: 10px;
+                display: flex;
+                justify-content: space-evenly;
+                gap: 50px;
+                button {
+                    background-color: blue;
+                    color: white;
+                    width: 80%;
+                    padding: 8px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

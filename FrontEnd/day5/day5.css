@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    .fa-bars {
+        display: none;
+    }
+    .left-menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+         
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            img {
+                height: 50px;
+                width: 50px;
+            }
+            span {
+                color: orange;
+            }
+        }
+    }
+   .right-menu {
+    padding: 0px 20px;
+    display: flex;
+    gap: 40px;
+        ul {
+            display: flex;
+            gap: 20px;
+            li {
+                list-style-type: none;
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .icon-user {
+            .fa-user {
+                color: white;
+            }
+        }
+   }
+}
+
+.product {
+    /* display: flex;
+    gap: 10px; */
+    display: grid;
+    gap: 10px;
+    .box1{
+        grid-area: b1;
+    }
+    .box2{
+        grid-area: b2;
+    }
+    .box3{
+        grid-area: b3;
+    }
+    .box4{
+        grid-area: b4;
+    }
+    .box5{
+        grid-area: b5;
+    }
+    .box6{
+        grid-area: b6;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1025px) {
+ .product {
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "b1 b3 b3"
+    "b2 b4 b5"
+    "b2 b6 b5"
+    ;
+ }
+}
+
+/* tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .product {
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .box {
+            width: calc(50%-5px);
+        } */
+       grid-template-areas: 
+       "b1 b2"
+       "b3 b4"
+       "b2 b5"
+       ;
+      }
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    header {
+            .fa-bars {
+                display: block;
+            }
+        .right-menu {
+            ul {
+                display: none;
+            }
+        }
+    }
+    .product {
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .box {
+            width: 100%;
+        } */
+        grid-template-areas: 
+        "b1"
+        "b2"
+        "b3"
+        "b4"
+        "b5"
+        "b6"
+        ;
+      }
+}

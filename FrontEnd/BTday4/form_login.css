@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    background: url(https://img.freepik.com/free-photo/rainy-day-mood-cartoon-style_23-2151557020.jpg?uid=R172592271&ga=GA1.1.255335923.1730873654&semt=ais_hybrid);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 60%;
+    background: rgba(81, 200, 188, 1);
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        .img-left {
+            text-align: center;
+            .logo {
+                padding: 10px;
+                height: 70px;
+                width: 100px;
+            }
+            .img-bottom {
+                width: 70%;
+                position: absolute;
+                top: 400px;
+                left: 180px;
+                transform: translate(-50%,-50%);
+            }
+        }
+        .form-right {
+            background-color: white;
+            border-radius: 20px;
+            text-align: center;
+            .language {
+                padding: 20px;
+                display: flex;
+                justify-content: end;
+                select {
+                    border: none;
+                }
+            }
+            .form-main {
+                margin-top: 20px;
+                .top-form {
+                    text-align: start;
+                    color: black;
+                }
+                .form-top {
+                    margin-left: 50px;
+                    display: flex;
+                    justify-content: start;
+                    color: black;
+                }
+                }
+                .form-group {
+                    padding: 10px;
+                    margin-top: 10px;
+                    gap: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                   input {
+                        width: 80%;
+                        padding: 8px;
+                        border: outset;
+                   }
+                   i {
+                        color: black;
+                        position: absolute;
+                        top: 50%;
+                        right: 50px;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+                .privacy {
+                    padding: 10px;
+                    color: blueviolet;
+                    gap: 10px;
+                    font-size: 14px;
+                    margin: auto;
+                    width: 60%;
+                    background-color: antiquewhite;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .button-Creation {
+                   button {
+                        padding: 15px;
+                        border-radius: 5px;
+                        background-color: rgb(15, 210, 145);
+                        margin-top: 20px;
+                        width: 80%;
+                        color: white;
+                        border: none;
+                   }
+                }
+                span {
+                    color: black;
+                    margin-top: 10px;
+                }
+                .box-bottom {
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    margin-top: 10px;
+                    .button-link {
+                        background-color: whitesmoke;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        button {
+                            background-color: whitesmoke;
+                            border: none;
+                        }
+                        i {
+                            color: blue;
+                        }
+                    }
+                }
+                .box-text {
+                    margin: 10px 0;
+                    a {
+                        text-decoration: none;
+                        color: brown;
+                    }
+                }
+            }
+        }
+}
